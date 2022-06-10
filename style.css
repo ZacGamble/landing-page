@@ -1,0 +1,97 @@
+a:link {
+    color: black;
+}
+
+body {
+    animation-name: fade-in;
+    animation-duration: 2500ms;
+}
+
+.greeting {
+
+    animation-name: slide-in;
+    animation-duration: 2000ms;
+}
+
+.icons {
+    position: relative;
+    animation: icons 2000ms;
+}
+
+@keyframes icons {
+    from {
+        top: 12em;
+    }
+
+    to {
+        top: 0em;
+    }
+}
+
+.img-grid {
+    position: relative;
+    animation: fade-in 3000ms;
+    animation: slide-up 2000ms;
+}
+
+.picture {
+    border-radius: 5%;
+    max-height: 90%;
+}
+
+.skills {
+    padding: 1px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 2em;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes icon-fade-in {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(90%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.slide-up {
+    animation-name: slide-up;
+    animation-duration: 2000ms;
+}
