@@ -2,9 +2,28 @@ a:link {
     color: black;
 }
 
+.active.project-row {
+    animation-name: project;
+    animation-duration: 2000ms;
+}
+
+@keyframes project {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
 body {
     animation-name: fade-in;
     animation-duration: 2500ms;
+}
+
+main {
+    font-family: Merriweather;
 }
 
 .greeting {
@@ -37,6 +56,15 @@ body {
 .picture {
     border-radius: 5%;
     max-height: 90%;
+}
+
+.project-img {
+    border-radius: 1%;
+}
+
+.project-img:hover {
+    background-color: gray;
+    transform: scale(1.02);
 }
 
 .skills {
