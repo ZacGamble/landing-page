@@ -17,13 +17,35 @@ a:link {
     }
 }
 
+.banner-end {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: limegreen;
+    width: 4em;
+}
+
 body {
+    background-color: rgb(246, 241, 240);
     animation-name: fade-in;
     animation-duration: 2500ms;
+    /* background: rgb(247, 247, 247);
+    background: linear-gradient(90deg, rgba(247, 247, 247, 1) 0%, rgba(62, 59, 59, 0.859) 100%); */
+
 }
 
 main {
     font-family: Merriweather;
+
+}
+
+.main-row {
+    height: 100vh;
+}
+
+.portrait {
+    background: rgb(31, 30, 30);
+    box-shadow: 3px 3px 3px black;
+    border-radius: 5%;
 }
 
 .greeting {
@@ -60,6 +82,7 @@ main {
 
 .project-img {
     border-radius: 1%;
+    box-shadow: 2px 4px 4px 3px black;
 }
 
 .project-img:hover {
@@ -67,12 +90,80 @@ main {
     transform: scale(1.02);
 }
 
+.project-wrapper {
+    padding: 1em;
+    animation-name: fade-out;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.project-anim {
+    animation-name: fade-in;
+    animation-duration: 2000ms;
+}
+
+.project-banner-end {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: orange;
+    width: 4em;
+}
+
+.project-header-default {
+    visibility: hidden;
+}
+
+.project-header {
+    visibility: visible;
+    padding: 1em;
+    animation-name: header-slide-in;
+    animation-duration: 1000ms;
+}
+
+@keyframes header-slide-in {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .skills {
+    display: none;
+}
+
+.skills-anim {
+    display: block;
+    animation-name: fade-in;
+    animation-duration: 2000ms;
     padding: 1px;
     height: auto;
     width: 100%;
     position: relative;
     top: 2em;
+}
+
+.skills-header-default {
+    visibility: hidden;
+}
+
+.skills-header {
+    visibility: visible;
+    padding: 1em;
+    animation-name: skills-banner-slide-in;
+    animation-duration: 1000ms;
+}
+
+@keyframes skills-banner-slide-in {
+    from {
+        transform: translateX(20%);
+    }
+
+    to {
+        transform: translateX(0%)
+    }
 }
 
 @keyframes fade-in {
@@ -82,6 +173,16 @@ main {
 
     to {
         opacity: 100;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 100;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
@@ -101,7 +202,7 @@ main {
 
 @keyframes slide-in {
     from {
-        transform: translateX(50%);
+        transform: translateX(40%);
     }
 
     to {
