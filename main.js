@@ -23,7 +23,8 @@ window.addEventListener('scroll', function() {
 const skillsBanner = document.querySelector("#skills-banner")
 const skills = document.querySelectorAll(".skills")
 // @ts-ignore
-const skillsBannerHeight = skillsBanner.getBoundingClientRect().top + document.documentElement.scrollTop - 300
+// let skillsBannerHeight = skillsBanner.getBoundingClientRect().top + document.documentElement.scrollTop
+const skillsBannerHeight = 850
 
 const addSkillsBannerOnScroll = () => skillsBanner?.classList.add("skills-header")
 const removeSkillsBannerOnScroll = () => skillsBanner?.classList.remove("skills-header")
@@ -41,4 +42,5 @@ window.addEventListener('scroll', function() {
     }
 })
 
-console.log(skillsBannerHeight);
+console.log("projectBannerHeight",projectBannerHeight);
+console.log("skillsBannerHeight",skillsBannerHeight);
