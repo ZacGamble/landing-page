@@ -38,12 +38,12 @@ main {
 }
 
 .main-row {
-    height: 100vh;
+    /* max-height: 100vh; */
 }
 
 .portrait {
-    background: rgb(31, 30, 30);
-    box-shadow: 3px 3px 3px black;
+    /* background: rgb(31, 30, 30); */
+    /* box-shadow: 3px 3px 3px black; */
     border-radius: 5%;
 }
 
@@ -76,7 +76,8 @@ main {
 
 .picture {
     border-radius: 5%;
-    max-height: 90%;
+    box-shadow: 3px 3px 3px black;
+
 }
 
 .project-img {

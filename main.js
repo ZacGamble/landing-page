@@ -36,6 +36,11 @@ window.addEventListener('scroll', function() {
         addSkillsBannerOnScroll()
         addSkilsOnScroll()
         }
+    else if(document.body.scrollHeight == 
+        document.body.scrollTop +        
+        window.innerHeight) {
+        window.alert("Bottom!"); 
+    }
     else{
         removeSkillsBannerOnScroll()
         removeSkilsOnScroll()
